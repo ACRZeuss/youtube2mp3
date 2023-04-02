@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="app">
-      <span className="logo">youtube2mp3</span>
+      <span className="logo">youtube2mp3 by erhan polat</span>
       <section className="content">
         <h1 className="content_title">YouTube to MP3 Converter</h1>
         <p className="content_description">
