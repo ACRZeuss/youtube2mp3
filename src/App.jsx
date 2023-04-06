@@ -33,17 +33,17 @@ function App() {
     <div className="app">
       <span className="logo">youtube2mp3 by erhan polat</span>
       <section className="content">
-        <h1 className="content_title">YouTube to MP3 Converter</h1>
+        <h1 className="content_title">YouTube'tan MP3'e Dönüştürücü</h1>
         <p className="content_description">
-          Transform YouTube videos into MP3s in just a few clicks!
+          Saniyeler içinde YouTube videolarını mp3 dosyasına dönüştür!
         </p>
 
         <form onSubmit={handleSubmit} className="form">
           <input ref={inputUrlRef} placeholder="Paste a Youtube video URL link..." className="form_input" type="text" />
-          <button type="submit" className="form_button">Search</button>
+          <button type="submit" className="form_button">Ara</button>
         </form>
 
-        {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="download_btn">Download MP3</a> : ''}
+        {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="download_btn">MP3 indir</a> : ''}
         
       </section>
     </div>
