@@ -35,7 +35,7 @@ function App() {
       <section className="content">
         <h1 className="content_title">YouTube'tan MP3'e Dönüştürücü</h1>
         <p className="content_description">
-          Saniyeler içinde YouTube videolarını sese dosyasına dönüştür!
+          Saniyeler içinde YouTube videolarını ses dosyasına dönüştür!
         </p>
 
         <form onSubmit={handleSubmit} className="form">
