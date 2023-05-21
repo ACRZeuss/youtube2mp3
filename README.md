@@ -1,7 +1,7 @@
 This project was bootstrapped with [vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
 
 <ins>App Preview</ins>
-![Project Preview](https://www.erhanpolat.net/img/yt2mp3.png)
+![Project Preview](./src/images/youtube2mp3.png)
 
 ## Available Scripts
 
