@@ -39,11 +39,11 @@ function App() {
         </p>
 
         <form onSubmit={handleSubmit} className="form">
-          <input ref={inputUrlRef} placeholder="Paste a Youtube video URL link..." className="form_input" type="text" />
+          <input ref={inputUrlRef} placeholder="Video linkini yapıştır..." className="form_input" type="text" />
           <button type="submit" className="form_button">Ara</button>
         </form>
 
-        {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="download_btn">MP3 indir</a> : ''}
+        {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="buttonDownload">MP3 indir</a> : ''}
         
       </section>
     </div>
