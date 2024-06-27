@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useRef, useState } from "react"
+import { useRef, useState } from "react";
 import { youtube_parser } from "./utils";
 
 function App() {
@@ -7,27 +7,26 @@ function App() {
   const [urlResult, setUrlResult] = useState(null);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const youtubeID = youtube_parser(inputUrlRef.current.value);
 
     const options = {
-      method: 'get',
-      url: 'https://youtube-mp36.p.rapidapi.com/dl',
+      method: "get",
+      url: "https://youtube-mp36.p.rapidapi.com/dl",
       headers: {
-        'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY,
-        'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
+        "X-RapidAPI-Key": import.meta.env.VITE_RAPID_API_KEY,
+        "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com",
       },
       params: {
-        id: youtubeID
-      }
-    }
+        id: youtubeID,
+      },
+    };
     axios(options)
-      .then(res => setUrlResult(res.data.link))
-      .catch(err => console.log(err))
+      .then((res) => setUrlResult(res.data.link))
+      .catch((err) => console.log(err));
 
-    inputUrlRef.current.value = '';
-
-  }
+    inputUrlRef.current.value = "";
+  };
 
   return (
     <div className="app">
@@ -39,15 +38,42 @@ function App() {
         </p>
 
         <form onSubmit={handleSubmit} className="form">
-          <input ref={inputUrlRef} placeholder="Video linkini yapıştır..." className="form_input" type="text" />
-          <button type="submit" className="form_button">Ara</button>
+          <input
+            ref={inputUrlRef}
+            placeholder="Video linkini yapıştır..."
+            className="form_input"
+            type="text"
+          />
+          <button type="submit" className="form_button">
+            Ara
+          </button>
         </form>
 
-        {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="buttonDownload">MP3 indir</a> : ''}
-        
+        <iframe
+          width="1230"
+          height="749"
+          src={`https://www.youtube.com/embed/${youtubeID}`}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        {urlResult ? (
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={urlResult}
+            className="buttonDownload"
+          >
+            MP3 indir
+          </a>
+        ) : (
+          ""
+        )}
       </section>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
