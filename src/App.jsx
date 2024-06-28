@@ -12,10 +12,10 @@ function App() {
 
     const options = {
       method: "get",
-      url: "https://youtube-mp3-download1.p.rapidapi.com/dl",
+      url: "https://youtube-mp36.p.rapidapi.com/dl",
       headers: {
         "X-RapidAPI-Key": import.meta.env.VITE_RAPID_API_KEY,
-        "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com",
+        "X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com",
       },
       params: {
         id: youtubeID,
