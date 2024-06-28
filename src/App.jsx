@@ -40,7 +40,7 @@ function App() {
           href="https://erhanpolat.net"
           style={{ textDecoration: "none", color: "white" }}
         >
-          erhan polat
+           erhan polat
         </a>
       </span>
 
