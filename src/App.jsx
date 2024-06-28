@@ -53,7 +53,7 @@ function App() {
 
         <p>
           Video olarak mı lazım? 
-          <a style={{color: "yellow"}} href="https://yt2mp4.erhanpolat.net">Video İndirme servisini</a>{" "}
+          <a style={{color: "yellow"}} href="https://yt2mp4.erhanpolat.net"> Video İndirme servisini</a>{" "}
           kullanabilirsiniz.
         </p>
 
