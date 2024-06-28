@@ -35,13 +35,8 @@ function App() {
   return (
     <div className="app">
       <span className="logo">
-        youtube2mp3 by 
-        <a
-          href="https://erhanpolat.net"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-           erhan polat
-        </a>
+        youtube2mp3 by erhan polat
+
       </span>
 
       <section className="content">
