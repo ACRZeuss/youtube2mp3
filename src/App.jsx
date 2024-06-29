@@ -67,7 +67,7 @@ function App() {
 
         <iframe
           id="video_embed"
-          width="600"
+          width="70%"
           height="400"
           src=""
           frameborder="0"
@@ -83,7 +83,7 @@ function App() {
             rel="noreferrer"
             href={urlResult}
             className="btn btn-success"
-            style={{ marginBottom: "50px", width: "590px" }}
+            style={{ marginBottom: "50px", width: "68%" }}
           >
             MP3 indir
           </a>
