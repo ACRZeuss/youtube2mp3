@@ -34,10 +34,7 @@ function App() {
 
   return (
     <div className="app">
-      <span className="logo">
-        youtube2mp3 by erhan polat
-
-      </span>
+      <span className="logo">youtube2mp3 by erhan polat</span>
 
       <section className="content">
         <h1 className="content_title">YouTube'tan MP3'e Dönüştürücü</h1>
@@ -47,8 +44,11 @@ function App() {
         </h2>
 
         <p>
-          Video olarak mı lazım? 
-          <a style={{color: "yellow"}} href="https://yt2mp4.erhanpolat.net"> Video İndirme servisini </a>{" "}
+          Video olarak mı lazım?
+          <a style={{ color: "yellow" }} href="https://yt2mp4.erhanpolat.net">
+            {" "}
+            Video İndirme servisini{" "}
+          </a>{" "}
           kullanabilirsiniz.
         </p>
 
@@ -91,6 +91,15 @@ function App() {
           ""
         )}
       </section>
+      <div className="row">
+        <div className="col-md-3">
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9309856003791115"
+            crossorigin="anonymous"
+          ></script>
+        </div>
+      </div>
     </div>
   );
 }
